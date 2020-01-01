@@ -4,7 +4,8 @@ const app = express();
 
 app.use(express.static(__dirname + '/client'));
 
-// Setup Environment variable
+// Setup Environment
+
 const port = process.env.PORT || 3002;
 
 app.listen(port, () => {
